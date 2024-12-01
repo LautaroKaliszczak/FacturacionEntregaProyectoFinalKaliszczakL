@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "f3868e74-7982-4c98-ab3d-d3750c6becc2",
+		"name": "Clientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39688664"
+	},
+	"item": [
+		{
+			"name": "Listar todos los clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar cliente por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/clientes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar clientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Jose\",\r\n    \"apellido\":\"Paz\",\r\n    \"email\":\"jp@gmail.com\",\r\n    \"direccion\":\"AvDirectorio 124\",\r\n    \"telefono\": \"+1140506070\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update cliente por id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Penelope\",\r\n    \"apellido\":\"Garcia\",\r\n    \"email\":\"PenelopeGar@gmail.com\",\r\n    \"direccion\":\"Rosario 27\",\r\n    \"telefono\": \"+1150607099\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/clientes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Elimiar cliente por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/clientes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
